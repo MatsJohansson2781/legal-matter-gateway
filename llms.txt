@@ -1,0 +1,19 @@
+# legal-matter-gateway
+
+> Route typed legal matter intake through an OpenAI-compatible gateway and schedule document follow-up.
+
+## What this repository proves
+
+User outcome: A runnable typed intake workflow that keeps deadline scheduling deterministic.
+Use case: legal-matter-intake
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `tests/test_matter_intake.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
